@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purvesh Gandhi - Resume</title>
+    <style>
+        :root {
+            --font-size-base: 11pt;
+            --font-size-small: 10pt;
+            --font-size-large: 12pt;
+            --font-size-huge: 24pt;
+        }
+
+        body {
+            /* Font stack tailored to closely match standard LaTeX */
+            font-family: "Latin Modern Roman", "Computer Modern", "Computer Modern Roman", "Times New Roman", Times, serif;
+            font-size: var(--font-size-base);
+            line-height: 1.25;
+            color: black;
+            margin: 0;
+            padding: 0;
+            background-color: #525659;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page {
+            width: 8.5in;
+            height: 11in;
+            background: white;
+            box-sizing: border-box;
+            padding: 0.5in;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            position: relative;
+        }
+
+        @media print {
+            body {
+                background: white;
+                display: block;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                padding: 0.5in;
+            }
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 12pt;
+        }
+
+        .name {
+            font-size: var(--font-size-huge);
+            font-weight: bold;
+            font-variant: small-caps;
+            margin-bottom: 2pt;
+        }
+
+        .contacts {
+            font-size: var(--font-size-small);
+        }
+
+        .section-title {
+            font-size: var(--font-size-large);
+            font-variant: small-caps;
+            margin-top: 8pt;
+            margin-bottom: 4pt;
+            border-bottom: 1px solid black;
+            padding-bottom: 2pt;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: var(--font-size-small);
+            padding-left: 0.15in;
+        }
+
+        .skills-list li {
+            margin-bottom: 2pt;
+        }
+
+        .subheading-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding-left: 0.15in;
+        }
+
+        .subheading-item {
+            margin-bottom: 4pt;
+        }
+
+        .subheading-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .subheading-row.row-1 {
+            margin-bottom: 1pt;
+        }
+
+        .subheading-row.row-1 .left {
+            font-weight: bold;
+        }
+
+        .subheading-row.row-1 .right {
+            font-weight: normal;
+        }
+
+        .subheading-row.row-2 {
+            font-style: italic;
+            margin-bottom: 2pt;
+        }
+
+        .subheading-row.row-2 .role {
+            font-size: var(--font-size-large);
+        }
+
+        .subheading-row.row-2 .location {
+            font-size: var(--font-size-small);
+        }
+
+        .item-list {
+            padding-left: 0.25in;
+            margin-top: 1pt;
+            margin-bottom: 3pt;
+        }
+
+        .item-list li {
+            font-size: var(--font-size-small);
+            margin-bottom: 1pt;
+            position: relative;
+            list-style-type: none;
+            text-align: justify;
+        }
+
+        .item-list li::before {
+            content: "•";
+            position: absolute;
+            left: -12pt;
+            font-size: 10pt;
+            top: 0;
+        }
+
+        .project-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1pt;
+        }
+
+        .project-title {
+            font-size: var(--font-size-base);
+        }
+
+        .project-tech {
+            font-size: var(--font-size-small);
+            margin-bottom: 2pt;
+        }
+
+        .project-date {
+            font-size: var(--font-size-base);
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-left: 6pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <!-- HEADING -->
+        <div class="header">
+            <div class="name">Purvesh Gandhi</div>
+            <div class="contacts">
+                9173409556 | <a href="mailto:purvesh.gandhi2012@gmail.com"
+                    class="underline">purvesh.gandhi2012@gmail.com</a> |
+                <a href="https://linkedin.com/in/purvesh261" class="underline">linkedin.com/in/purvesh261</a> |
+                <a href="https://github.com/purvesh261" class="underline">github.com/purvesh261</a> |
+                <a href="https://leetcode.com/u/purvesh261" class="underline">leetcode.com/u/purvesh261</a>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="section-title">Skills</div>
+        <ul class="skills-list">
+{{ SKILLS_PLACEHOLDER }}
+<!-- EXPECTED HTML STRUCTURE FOR SKILLS:
+            <li><strong>Category Name:</strong> Item 1, Item 2</li>
+-->
+        </ul>
+
+        <!-- EXPERIENCE -->
+        <div class="section-title">Experience</div>
+        <ul class="subheading-list">
+{{ EXPERIENCE_PLACEHOLDER }}
+<!-- EXPECTED HTML STRUCTURE FOR EXPERIENCE:
+            <li class="subheading-item">
+                <div class="subheading-row row-1">
+                    <span class="left">Company Name</span>
+                    <span class="right">Start Date &ndash; End Date</span>
+                </div>
+                <div class="subheading-row row-2">
+                    <span class="role">Role Title</span>
+                    <span class="location">Location</span>
+                </div>
+                <ul class="item-list">
+                    <li>Impact bullet point 1</li>
+                    <li>Impact bullet point 2</li>
+                </ul>
+            </li>
+-->
+        </ul>
+
+        <!-- PROJECTS -->
+        <div class="section-title">Projects</div>
+        <ul class="subheading-list">
+{{ PROJECTS_PLACEHOLDER }}
+<!-- EXPECTED HTML STRUCTURE FOR PROJECTS:
+            <li class="subheading-item">
+                <div class="project-heading">
+                    <span class="project-title"><strong>Project Name</strong></span>
+                    <span class="project-date">Start Date &ndash; End Date</span>
+                </div>
+                <div class="project-tech"><em>Tech 1, Tech 2, Tech 3</em></div>
+                <ul class="item-list">
+                    <li>Impact bullet point 1</li>
+                </ul>
+            </li>
+-->
+        </ul>
+
+        <!-- EDUCATION -->
+        <div class="section-title">Education</div>
+        <ul class="subheading-list">
+{{ EDUCATION_PLACEHOLDER }}
+<!-- EXPECTED HTML STRUCTURE FOR EDUCATION:
+            <li class="subheading-item">
+                <div class="subheading-row row-1">
+                    <span class="left">Institution Name</span>
+                    <span class="right">Location</span>
+                </div>
+                <div class="subheading-row row-2">
+                    <span class="role">Degree Name</span>
+                    <span class="location"></span>
+                </div>
+            </li>
+-->
+        </ul>
+    </div>
+</body>
+
+</html>

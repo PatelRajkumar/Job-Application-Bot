@@ -1,0 +1,35 @@
+# Secrets — never commit these
+.env
+credentials.json
+token.json
+
+# Generated output — large and personal, not needed in repo
+generated/
+
+# Stray generated artifacts (guides/PDFs that leak to root)
+*_Guide.md
+*.pdf
+*.jsonl
+
+# Plans — personal strategy docs, not part of the deployable app
+plans/
+
+# Node
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+*.code-workspace
