@@ -1,56 +1,64 @@
 {
   "basics": {
-    "name": "Purvesh Gandhi",
+    "name": "Rajkumar Patel",
     "role": "Software Engineer",
-    "phone": "9173409556",
-    "email": "purvesh.gandhi2012@gmail.com",
+    "phone": "7041733193",
+    "email": "patelrajkumar362001@gmail.com",
     "profiles": {
-      "linkedin": "https://linkedin.com/in/purvesh261",
-      "github": "https://github.com/purvesh261",
-      "leetcode": "https://leetcode.com/u/purvesh261"
+      "linkedin": "https://www.linkedin.com/in/rajkumar3601/",
+      "github": "https://github.com/PatelRajkumar",
+      "leetcode": "https://leetcode.com/u/RK3601/"
     }
   },
   "skills": {
     "languages": [
-      "Javascript (ES6+)",
-      "Typescript"
-    ],
-    "databases": [
-      "MongoDB",
-      "MySQL",
-      "PostgreSQL",
-      "Redis"
+      "Java (Core Java, Collections, Streams, Multithreading)",
+      "SQL",
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS"
     ],
     "frameworks": [
-      "Node.js",
-      "Nest.js",
-      "Express.js",
+      "Spring Boot",
+      "Spring",
+      "Spring Security",
+      "Hibernate",
+      "JPA",
+      "REST APIs",
+      "Microservices",
+      "Maven",
       "React",
-      "Jest"
+      "Redux",
+      "MUI",
+      "Tailwind",
+      "Kafka"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis"
     ],
     "cloud": [
       "AWS S3",
-      "SNS",
-      "Lambda",
-      "RDS",
-      "EC2"
-    ],
-    "messaging": [
-      "Apache Kafka",
-      "BullMQ"
+      "AWS EC2",
+      "AWS Lambda"
     ],
     "tools_and_practices": [
+      "IntelliJ",
+      "AntiGravity",
       "Git",
-      "GitHub Actions",
-      "Webhooks",
-      "Microservices",
+      "Postman",
+      "JUnit",
+      "Mockito",
+      "SonarQube",
       "Docker",
-      "CI/CD",
+      "Jenkins",
+      "CI/CD Pipelines",
       "Agile",
       "DSA",
-      "OOPS",
-      "Claude Code",
-      "Cursor AI"
+      "Design Patterns",
+      "SOLID Principles"
     ]
   },
   "experience": [
@@ -61,120 +69,104 @@
       "endDate": "Present",
       "location": "Ahmedabad, Gujarat",
       "general_responsibilities": [
-        "Led full-stack development cycles, coordinating frontend and backend workstreams to ensure timely delivery and maintain quality.",
-        "Actively participated in client meetings to bridge business needs with technical execution, ensuring the software met functional and strategic objectives.",
-        "Mentored junior engineers, emphasizing best coding practices, guiding debugging sessions, and helping them adopt frontend and backend architectures.",
-        "Built and maintained full-stack features using React, Node, and Nest.js, delivering end-to-end solutions from UI components to backend APIs and database logic.",
-        "Developed reusable React components, optimized rendering performance, and improved state management using Redux Toolkit / React Query for smoother user experiences.",
-        "Collaborated with designers to convert Figma mockups into responsive, pixel-perfect UI screens that met accessibility and performance standards.",
-        "Engineered scalable modules and optimized APIs for high-load computation tasks, resolving time-sensitive issues and improving system throughput.",
-        "Implemented basic CI/CD workflows using GitHub Actions and Docker to automate testing and streamline deployments.",
-        "Built event-driven backend systems leveraging Kafka for message brokering between services.",
-        "Leveraged serverless architecture using AWS Lambda to optimize resource utilization at scale.",
-        "Diagnosed and resolved complex production bottlenecks spanning API latency, database queries, and third-party integrations using APM profiling, query optimization (EXPLAIN ANALYZE), and Redis caching.",
-        "Identified and mitigated critical security vulnerabilities (e.g., stored XSS) in rich text inputs for a global platform by implementing rigorous DOMPurify sanitization and CSP adjustments.",
-        "Demonstrated high adaptability by rapidly transitioning from a pure backend role to a full-stack capacity on a critical client project, shipping new React features independently within a month.",
-        "Leveraged AI-assisted development tools (Claude Code, Cursor AI) to accelerate feature delivery, quickly diagnose complex bugs, and streamline code refactoring tasks."
+        "Designed and developed scalable Java microservices using Spring Boot and REST APIs.",
+        "Designed scalable microservices following SOLID principles and design patterns.",
+        "Implemented JWT authentication and role-based access control to enhance security and simplify user management.",
+        "Integrated AWS cloud services S3, EC2, Lambda to build scalable file storage and processing solutions, improving system performance and reducing dependency on application servers.",
+        "Developed unit and integration tests using JUnit and Mockito to ensure reliability and high code quality.",
+        "Initiated and led projects from scratch, defining branching strategies and project estimations.",
+        "Mentored software development interns by conducting regular code reviews, providing constructive feedback, and guiding them through their internship project to enhance their technical skills.",
+        "Held regular client meetings to address concerns, align deliverables, and maintain clear communication throughout development cycles."
       ],
       "projects": [
         {
-          "name": "Impact Collaboration Platform",
-          "startDate": "July 2025",
-          "endDate": "Present",
+          "name": "Enterprise B2B E-Commerce Platform for HVAC Distribution",
           "tech_stack": [
-            "Node",
-            "Nest.js",
-            "PostgreSQL",
-            "AWS",
-            "Redis",
-            "n8n",
-            "Kafka",
-            "BullMQ",
-            "Jest",
-            "Puppeteer"
+            "Java 17",
+            "Spring Boot 3",
+            "Apache Lucene",
+            "Stripe",
+            "MockMvc"
           ],
           "impact_bullets": [
-            "Decoupled synchronous n8n AI workflows using BullMQ and Redis, preventing HTTP timeouts and data loss by introducing retries, dead-letter queues, and a circuit breaker pattern.",
-            "Integrated a fault-tolerant event-driven n8n architecture using Kafka, asynchronously handling massive AI payload webhooks to protect the main thread from traffic spikes and third-party API timeouts.",
-            "Implemented strict LLM output schema validation, automatically re-prompting and retrying on failure, drastically improving data reliability for downstream processes.",
-            "Built real-time frontend status updates using Server-Sent Events (SSE), replacing 2-minute polling spinners with live progress feedback to significantly improve user experience.",
-            "Diagnosed a critical server memory leak using `top` and `ps aux`, identifying orphaned Chromium processes; architected a headless browser pool for PDF generation to eliminate CPU bottlenecks.",
-            "Architected an asynchronous PDF generation service using Node.js worker threads and Puppeteer, implementing headless browser instance pooling to eliminate memory leaks during concurrent report exports.",
-            "Optimized PDF generation by offloading to a background worker queue with email notifications, and implemented S3 caching for generated reports, reducing repeat download times from seconds to near-instant."
+            "Led backend development of a B2B e-commerce platform managing 50K+ SKUs and 11K–13K daily transactions, enabling real-time inventory and dynamic pricing.",
+            "Built a full-text search engine using Apache Lucene, reducing average search latency from 800ms to 150–200ms.",
+            "Implemented seamless B2B payment processing using the Stripe Java SDK, adhering to PCI compliance and managing complex multi-stage order checkouts securely.",
+            "Designed and tested REST APIs using MockMvc, achieving 80–85% test coverage and validating edge cases, input validation, and error handling."
           ],
           "tags": [
             "backend",
+            "ecommerce",
             "performance",
-            "architecture",
-            "ai_integration",
-            "queuing"
+            "payments",
+            "search"
           ]
         },
         {
-          "name": "Student Information System",
-          "startDate": "June 2024",
-          "endDate": "Present",
+          "name": "TaskFlow - Task Management System",
           "tech_stack": [
-            "React",
-            "Node",
-            "Nest.js",
-            "MongoDB",
-            "AWS",
+            "Java",
+            "Spring Boot",
+            "PostgreSQL",
             "Redis",
-            "BullMQ"
+            "AWS S3",
+            "React",
+            "TypeScript",
+            "Material UI",
+            "TanStack Query"
           ],
           "impact_bullets": [
-            "Architected a scalable multi-tenant SaaS platform supporting 50+ isolated tenant databases, utilizing a NestJS middleware to dynamically lazy-load and cache MongoDB connections based on JWT tenant extraction.",
-            "Played a vital role in the development of a robust multitenant database architecture, ensuring data isolation and security across 50+ clients.",
-            "Designed zero-downtime database migrations across 50+ tenants using lazy field additions and automated sequential migration scripts with resumption capabilities.",
-            "Engineered a robust bulk user ingestion pipeline using BullMQ, capable of asynchronously processing thousands of Excel rows across 4+ roles with granular error reporting.",
-            "Built a scalable user bulk insertion system designed to process Excel sheets, significantly reducing manual entry efforts for school administrators.",
-            "Built complex MongoDB aggregation pipelines spanning 7+ collections, reducing multi-collection query response times by 30%.",
-            "Engineered a robust SaaS platform to uncover students' individual learning preferences by analyzing detailed reports of their educational journeys, enabling tailored guidance.",
-            "Developed responsive React dashboards to visualize learning patterns, performance metrics, and personalized student insights.",
-            "Diagnosed and resolved critical UI lag in large data tables by using React Profiler, implementing React.memo and useMemo to stabilize derived references, dropping re-render times from ~60ms to under 10ms.",
-            "Optimized frontend Web Vitals (LCP, INP) by implementing route-based code splitting with React.lazy, deferring non-urgent state updates, and standardizing image formats to WebP."
+            "Architected a full-stack issue tracking platform with JWT-based authentication, refresh token rotation, email verification, and role-based access control (RBAC).",
+            "Integrated Redis caching layer with custom TTL strategies and Spring AOP based logging to monitor cache performance, reducing authentication query load by ~90%.",
+            "Built AWS S3 file storage service with presigned URL generation for secure temporary file access, with local storage fallback for development environments.",
+            "Developed React frontend with TypeScript, Material UI, and TanStack Query for efficient server state management with optimistic updates and real-time data synchronization.",
+            "Containerized application with Docker Compose orchestration."
           ],
           "tags": [
             "fullstack",
-            "architecture",
-            "multi-tenant",
-            "database_optimization",
-            "saas"
+            "backend",
+            "auth",
+            "caching",
+            "aws"
+          ]
+        },
+        {
+          "name": "Judicial Case Management System",
+          "tech_stack": [
+            "Java",
+            "Spring Boot",
+            "React",
+            "Redux",
+            "PostgreSQL",
+            "Spring Security",
+            "Hibernate"
+          ],
+          "impact_bullets": [
+            "Developed a role-based case management system using Spring Boot and Spring Security, implementing fine-grained access control and secure session handling.",
+            "Designed and optimized PostgreSQL database queries and backend services, improving application performance for search and filtering operations.",
+            "Designed database schema in PostgreSQL and implemented complex query optimization for efficient search and filtering operations.",
+            "Optimized overall application performance by 23% using Lighthouse and GTmetrix, reducing image sizes by over 50% with WebP format, prioritizing carousel images for faster rendering and implementing React.Lazy to minimize unused JavaScript.",
+            "Conducted 50+ code reviews, preventing problematic code merges and enforcing coding principles like DRY and KISS, resulting in a clean and maintainable codebase.",
+            "Applied Agile principles to manage project timelines, consistently achieving 95% on-time delivery while working on two projects simultaneously."
+          ],
+          "tags": [
+            "backend",
+            "security",
+            "performance",
+            "agile"
           ]
         }
       ]
     }
   ],
-  "side_projects": [
-    {
-      "name": "Chiral (n8n CLI Tool)",
-      "status": "Active",
-      "tech_stack": [
-        "Node.js",
-        "REST APIs",
-        "Git",
-        "CLI"
-      ],
-      "impact_bullets": [
-        "Developed a CLI tool for environment promotion (dev → staging → prod) of self-hosted n8n workflows, providing a safer deployment pipeline for agencies to prevent production outages.",
-        "Engineered stable content fingerprinting using SHA-256 hashes to eliminate versionId false positives during environment diffs and pushes.",
-        "Implemented automated state synchronization by integrating simple-git, automatically committing state changes to the team's remote repository without requiring new credentials.",
-        "Designed an extensible architecture supporting cross-instance workflow discovery, selective promotions via tags/patterns, and credential drift detection."
-      ],
-      "tags": [
-        "tooling",
-        "devops",
-        "0_to_1",
-        "product_mindset"
-      ]
-    }
-  ],
+  "side_projects": [],
   "education": [
     {
       "institution": "Ganpat University",
-      "degree": "Bachelor of Technology in Computer Engineering",
-      "location": "Ahmedabad, Gujarat"
+      "degree": "Bachelor of Technology in Information Technology",
+      "location": "Mehsana, Gujarat",
+      "startYear": "2018",
+      "endYear": "2022"
     }
   ]
 }
